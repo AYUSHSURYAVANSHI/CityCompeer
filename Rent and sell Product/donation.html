@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donation Feature</title>
+    <link rel="stylesheet" type="text/css" href="donation.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Donation Feature</h1>
+    </header>
+
+    <main>
+      <div class="donation-form">
+        <h2>Submit a Donation</h2>
+        <form id="donationForm">
+          <label for="itemName">Item Name:</label>
+          <input type="text" id="itemName" required />
+
+          <label for="itemDescription">Item Description:</label>
+          <textarea id="itemDescription" required></textarea>
+
+          <label for="itemCategory">Item Category:</label>
+          <select id="itemCategory">
+            <option value="electronics">Electronics</option>
+            <option value="books">Books</option>
+            <option value="clothing">Stationery</option>
+            <option value="clothing">Furniture</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="itemQuantity">Quantity:</label>
+          <input type="number" id="itemQuantity" min="1" required />
+
+          <label for="contactName">Contact Name:</label>
+          <input type="text" id="contactName" required />
+
+          <label for="contactEmail">Contact Email:</label>
+          <input type="email" id="contactEmail" required />
+
+          <button type="submit">Submit Donation</button>
+        </form>
+      </div>
+
+      <div class="donation-list">
+        <h2>Donated Items</h2>
+        <ul id="donationItems">
+          <!-- Donated items will be dynamically inserted here -->
+        </ul>
+      </div>
+    </main>
+
+    <script src="donation.js"></script>
+  </body>
+</html>

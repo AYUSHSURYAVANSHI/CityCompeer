@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration To Rent Product</header>
+      <form action="#" class="form">
+        <div class="input-box">
+            <label>Product Name: Engineering Drawing Drafter</label>
+        </div>
+        <div class="input-box">
+            <label>Product Price: ₹280</label>
+        </div>
+        <div class="input-box">
+            <label>Owner Name: Brijesh Rai</label>
+        </div>
+        <div class="input-box">
+            <label>Email Address: brijeshrai@gmail.com</label>
+        </div>
+        <div class="input-box">
+            <label>Qualification: B.Tech Electrical Engineering 4 year</label>
+        </div>
+        
+        <div class="column">
+            <button onclick="showAlert()">Submit Request</button>
+        </div>
+      </form>
+    </section>
+    <script>
+        function showAlert() {
+          var myText = "Request Sent!";
+          alert (myText);
+        }
+        </script>
+  </body>
+</html>
