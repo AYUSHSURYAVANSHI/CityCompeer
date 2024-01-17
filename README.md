@@ -1,14 +1,13 @@
 
 # CityCompeer
 
-CityCompeer is a responsive website to assist new comers to a city.
-Consider a college or boarding school student, an internal migrant or people moving abroad; a person that enters a new city is a complete stranger to the culture, market and the city environment.
-CityCompeer will assist such users through features such as interactive ChatBot, Community Posts, availability of goods and rooms online for purchase or rent and many more friendly features.
+CityCompeer is a user-friendly website designed to help newcomers adapt to a new city. Whether you're a student, migrant, or someone relocating, CityCompeer ensures a smooth transition with features like a responsive ChatBot, Community Posts, and online availability of goods and rooms for purchase or rent. Enjoy a seamless experience with a light/dark mode toggle and personalized results.
 
 ## Features
 
-- Light/dark mode toggle
-- User friendly interface
-- Personalised results
-- Interactive assistance through ChatBot
-
+- Light/dark mode toggle for personalized viewing
+- User-friendly interface for seamless navigation
+- Personalized results to cater to individual preferences
+- Interactive ChatBot for real-time assistance and guidance
+- Community Posts for engaging with locals and fellow newcomers
+- Availability of goods and rooms online for purchase or rent, ensuring a comfortable  stay in your new city.
