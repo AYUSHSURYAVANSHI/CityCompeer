@@ -30,17 +30,30 @@
 
           <label for="itemQuantity">Quantity:</label>
           <input type="number" id="itemQuantity" min="1" required />
+          
+          
+
 
           <label for="contactName">Contact Name:</label>
           <input type="text" id="contactName" required />
 
           <label for="contactEmail">Contact Email:</label>
           <input type="email" id="contactEmail" required />
+           
+          <div class="form-group">
+            <input type="file" name="file" id="file" class="input-file">
+            <label for="file" class="btn btn-tertiary js-labelFile">
+              <i class="icon fa fa-check"></i>
+              <span class="js-fileName">Choose a file</span>
+            </label>
+          </div>
+          
 
           <button type="submit">Submit Donation</button>
         </form>
       </div>
 
+      
       <div class="donation-list">
         <h2>Donated Items</h2>
         <ul id="donationItems">
