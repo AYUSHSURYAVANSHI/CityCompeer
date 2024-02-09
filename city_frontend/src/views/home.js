@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
+import chat from './chat.png'
 
 import { Helmet } from 'react-helmet'
+import { Link } from "react-router-dom";
 
 import Header from '../components/header'
 import FeatureCard from '../components/feature-card'
 import Question1 from '../components/question1'
 import Footer from '../components/footer'
+import Banner from '../components/banner-card'
+import ChatbotBox from '../components/chatbot'
+
 import './home.css'
 
 const Home = (props) => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="home-container">
       <Helmet>
@@ -89,11 +105,12 @@ const Home = (props) => {
             </span>
             <div className="home-btn-group">
               <button className="buttonFilled">Get Started</button>
-              <button className="buttonFlat">Learn More →</button>
+              <button className="buttonFlat">Learn More→</button>
             </div>
           </div>
         </div>
       </div>
+
       <div className="home-features">
         <div className="featuresContainer">
           <div className="home-features1">
@@ -194,82 +211,35 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-banner">
-        <div className="bannerContainer home-banner1">
-          <h1 className="home-banner-heading heading2">
-            Find Your Perfect Home
-          </h1>
-          <span className="home-banner-sub-heading bodySmall">
-            <span>
-              <span>
-                <span>
-                  Browse through a wide range of rooms and homes available for
-                  rent or sale in your city. Whether you&apos;re a newcomer or a
-                  local, we have the perfect place for you.
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-            </span>
-            <span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-            </span>
-          </span>
-          <button className="buttonFilled">View Listings</button>
-        </div>
+
+      {/* Chatbot here */}
+      <div className='md:w-1/2 mt-4'>
+        {!isOpen && (
+          <button onClick={openModal} className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-md focus:outline-none">
+            Open Chatbot
+          </button>
+        )}
+        {isOpen && (
+          <div className='relative'>
+            < ChatbotBox />
+            <button onClick={closeModal} className="absolute top-0 right-2 m-2 bg-red-500 hover:bg-red-600 text-white font-semibold px-2 py-1 rounded-md focus:outline-none">Close</button>
+          </div>
+        )}
       </div>
+
+      {/* <Link className='text-blue-500' to={`/chatbot`}>Chat With Ai!</Link> */}
+
+      {/* <div className=' container'>
+        <div className='gallery-card'>
+          <img
+            src={chat}
+            className='image'
+          />
+        </div>
+      </div> */}
+
+      <Banner />
+
       <div className="home-faq">
         <div className="faqContainer">
           <div className="home-faq1">
