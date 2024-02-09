@@ -12,7 +12,7 @@ from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open('/workspaces/CityCompeer/ChatBot/intents.json').read())
+intents = json.loads(open('intents.json').read())
 
 words = []
 classes = []
