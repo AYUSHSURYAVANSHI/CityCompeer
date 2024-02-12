@@ -7,10 +7,10 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
 
 # Load data and model
-intents = json.loads(open('intents.json').read())
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+intents = json.loads(open(r'chatbot\model\utils\intents.json', encoding='utf-8').read())
+words = pickle.load(open(r'chatbot\model\utils\words.pkl', 'rb'))
+classes = pickle.load(open(r'chatbot\model\utils\classes.pkl', 'rb'))
+model = load_model(r'chatbot\model\utils\chatbot_model.h5')
 
 # Initialize lemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -44,10 +44,10 @@ def get_response(intents_list, intents_json = intents ):
             return random.choice(i['responses'])
 
 print("GO! Bot is running!")
-
-while True:
-    message = input("")
-    intents = predict_class(clean_up_sentence(message))
-    response = get_response(intents)
-    print(response)
+ 
+# while True:
+#     message = input("")
+#     intents = predict_class(clean_up_sentence(message))
+#     response = get_response(intents)
+#     print(response)
     

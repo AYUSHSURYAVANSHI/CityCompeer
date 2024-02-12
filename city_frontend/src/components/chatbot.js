@@ -27,7 +27,7 @@ const ChatbotBox = () => {
     const sendMessage = async () => {
         if (!message.trim()) return; // Don't send empty messages
         try {
-            const response = await axios.post('/chatbot/', { message });
+            const response = await api.post('/chatbot/', { message });
             const botResponse = response.data.response;
             const updatedHistory = [...chatHistory, { sender: 'user', message }, { sender: 'bot', message: botResponse }];
             setChatHistory(updatedHistory);

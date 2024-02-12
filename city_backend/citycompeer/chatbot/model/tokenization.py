@@ -11,7 +11,8 @@ nltk.download('punkt')
 nltk.download('wordnet')
 
 # Load intents file
-intents = json.loads(open('intents.json').read())
+# intents = json.loads(open('intents.json').read())
+intents = json.loads(open(r'chatbot\model\utils\intents.json').read())
 
 # Initialize lemmatizer
 lemmatizer = WordNetLemmatizer()

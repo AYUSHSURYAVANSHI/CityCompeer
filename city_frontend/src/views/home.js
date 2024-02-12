@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import chat from './chat.png'
+// import chat from '../../public/chat.png'
 
 import { Helmet } from 'react-helmet'
 import { Link } from "react-router-dom";
