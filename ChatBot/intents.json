@@ -1,101 +1,313 @@
-{"intents": [
-    {"tag": "greeting",
-     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-     "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
-     "context": [""]
-    },
-    {"tag": "goodbye",
-     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-     "context": [""]
-    },
-    {"tag": "thanks",
-     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-     "responses": ["My pleasure", "You're Welcome"],
-     "context": [""]
-    },
-    {"tag": "noanswer",
-     "patterns": [],
-     "responses": ["Sorry, can't understand you", "Please give me more information", "Not sure, I understand"],
-     "context": [""]
-    },
-    {"tag": "options",
-     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-     "responses": ["I can guide you through your city, it's famous places, environment and goods available for rent or purchase in nearby locations",  "Offering support for to make your adapt to envirorment of your new city"],     "context": [""]
-    },
-    {"tag": "Indore",
-    "patterns": ["What are famous places in Indore?","what are historical places in Indore", "tourist attractions in Indore","What are best places to visit in Indore","places to visit in Indore"],
-    "responses": ["Indore is a city of historical and cultural significance, as well as a modern hub of commerce and education. There are many famous places in Indore that you can visit, such as Lalbagh Palace, Khajrana Ganesh Temple, Kanch Mandir, Rajwada Palace, and Patalpani Waterfall.\nThese are some of the best places to visit in Indore, but there are many more to explore. You can also check out the Sarafa Market, Central Museum of Indore, Ralamandal Wildlife Sanctuary, Chappan Dukaan, Choral Dam, Tincha Falls, Indore White Church, Mandu or Mandavgad Forts, and more. \nI hope you enjoy your trip to Indore."],
-    "context": [""]
-    },
-    {"tag": "accomadation in Indore",
-     "patterns": ["apartment in Indore", "accommodation in Indore", "house in Indore", "Dormitory in Indore" ],
-     "responses": ["Accommodations in Indore:  \n1. Apartment for rent at prices INR 1200 with amenities such as WiFi, Parking, Gym, etc.\n2. House for rent at prices INR 2500 with amenities such as Garden, Pet-friendly, Security System, etc. \n3. Dormitory for rent at prices INR 600 with amenities such as Common Kitchen, Laundry Facilities, Study Areas etc."],
-     "context": [""]
-    },
-    {"tag": "Mall",
-     "patterns": ["Treasure Island Mall", "TI mall", "TI mall Indore", "TI, Indore", "mall","shopping mall in Indore" ],
-     "responses": ["Treasure Island Mall is a popular shopping destination in Indore with a wide range of brands and entertainment options and amenities such as Food Court, Multiplex Game Zone, etc."],
-     "context": [""]
-    },
-    {"tag": "Khajrana Ganesh Temple",
-     "patterns": ["temple in Indore", "Khajrana Ganesh Temple in Indore", "Ganesh temple in Indore", "khajrana temple" ],
-     "responses": ["Khajrana Ganesh Temple is a Hindu temple dedicated to the god Ganesha, located in Indore, Madhya Pradesh, India.\nIt was built by Maharani Ahilyabai Holkar of the Holkar Dynasty in 1735. The temple is famous for its 8-metre-long Ganesha idol, which is made of limestone, jaggery, mud and bricks, and decorated with precious metals.\nThe temple is a popular pilgrimage destination for Hindus, and it is also a tourist attraction for its beautiful architecture and peaceful atmosphere.\nThe main festival of the temple is Vinayaka Chaturthi, which is celebrated in August or September. \nThe temple also offers online darshan, aarti, and donation services for the devotees"],
-     "context": [""]
-    },
-    {"tag": "Phoenix Citadel",
-     "patterns": ["Phoenix Citadel", "phoenix Indore", "shopping mall, indore", "phoenix citadel, Indore"],
-     "responses": ["Phoenix Citadel is a luxury shopping destination with over 300 brands, events, services, and entertainment. \nIt is located on MR 10 Road in Indore, Madhya Pradesh. \nThe mall is spread over 1.0 million sq. ft. of retail space, making it one of India’s most elegant malls. \nPhoenix Citadel offers a range of services to make your experience even more gratifying, such as valet parking, babysitting rooms, digital directory, gift card, and more. \nYou can also enjoy several events including cultural and entertainment experiences and amazing concerts. \nPhoenix Citadel is a hallmark of shopping extravagance in Indore, and is Central India’s largest mall."],
-     "context": [""]
-    },
-    {"tag": "Rajwada Palace",
-    "patterns": ["Rajwada Palace", "rajwada palace in Indore", "rajwada"],
-    "responses":["Rajwada Palace, also known as Holkar Palace or Old Palace, is a historical palace located in Indore, Madhya Pradesh, India. \nIt was built by the Holkars of the Maratha Empire in 1747. The palace is a seven-storey structure that showcases a blend of Rajput and Mughal architectural styles. \nThe palace has a beautiful garden, a statue of Queen Ahilya Bai, and a light and sound show in the evening. \nThe palace is a popular tourist attraction and a cultural heritage of Indore."],
-    "context": [""]
-    },
-    {"tag": "Transportation in Indore",
-    "patterns": ["transportation in Indore", "to and fro in Indore", "bus facility in Indore","Indore railway station"],
-    "responses":["Certainly! Let’s explore the transportation options in Indore, a vibrant city in Madhya Pradesh, India.\n1. Atal Indore City Transport Services Limited (AiCTSL):\nThe Indore BRTS (ibus), operated by AiCTSL, covers an operational length of 11.5 km with a proposed extension of 20 km. This Bus Rapid Transit System aims to enhance mobility and reduce congestion in the city1.\nCity Buses: The city has a network of buses that ply on 277 km of road routes, providing an essential mode of public transport.\nCab Services: You can avail of services from metro taxis and star cabs for convenient point-to-point travel.\nAuto-Rickshaws: These CNG-fueled three-wheelers are a common sight and offer flexible transportation within the city.\nCity Vans: Look out for Maruti Omni or Tata Magic vans, which provide shared rides at affordable rates.\nVehicle Rentals: Private travel agencies offer rental vehicles for personalized travel experiences.\n2. Shared Taxis (“Magic” and “Omni” Vans):If you want to explore lesser-known areas of the city, rely on these reliable and budget-friendly shared taxis. They are commonly referred to as “Magic” and “Omni” vans."],
-    "context": [""]
-    },
-    {"tag": "Malls Delhi",
-     "patterns": ["DLF malls","DLF Avenue", "DLFs mall in Delhi", "Malls in Delhi"],
-     "responses": ["Certainly! Let’s explore some of the prominent malls in Delhi, including those developed by DLF:\nDLF Emporio:\nDLF Emporio is a high-end luxury shopping destination in Delhi. It boasts an exquisite collection of fashion, eyewear, and jewelry brands. The mall prioritizes health and safety, and you can find more information on their website.\nDLF Mall of India:\nDLF Mall of India holds the distinction of being the largest mall in India, with a retail space spanning 2 million square feet across 7 floors. It features an array of fabulous fashion stores, delightful dining options, and exciting entertainment venues\n.DLF Promenade Mall:\nLocated on Nelson Mandela Road in Vasant Kunj, DLF Promenade Mall is a paradise for shoppers. It houses renowned brands in fashion, apparel, footwear, and more. Some of the notable brands include Marks & Spencer, Fabindia, Adidas, Reebok, and Levi’s.\nDLF Avenue, Saket:\nStretching over 519,596 square feet, DLF Avenue is considered one of the best shopping malls in Delhi. It hosts a diverse range of brands, including Uniqlo, American Eagle, Guess, Swatch, Fossil, and many others.\nDLF Retail Destinations:\nDLF has created premier retail destinations across India, offering a world of shopping, dining, and entertainment. These destinations prioritize quality, professionalism, and customer service."],
-     "context": [""]
-    },
-    {"tag": "Temples Delhi",
-     "patterns": ["Temples in Delhi", "delhi temples", "lotus temple", "Lotus Temple", "lotus temple delhi"],
-     "responses": ["The Lotus Temple (Baháʼí House of Worship) is an architectural marvel with a lotus-like shape.\nIt has 27 marble-clad “petals” arranged in clusters of three, forming a total of nine sides.\nThe central hall inside has a soaring height of slightly over 34 meters.\nThe temple is open to everyone, regardless of religion or background.\nArchitect Fariborz Sahba designed it, and it was dedicated in 1986.\nThe Lotus Temple symbolizes unity and inclusivity, welcoming people from all walks of life."],
-     "context": [""]
-    },
-    {"tag": "Red Fort",
-     "patterns": ["Redfort delhi", "Laal Kila", "fort delhi"],
-     "responses": ["The Lotus Temple (Baháʼí House of Worship) is an architectural marvel with a lotus-like shape.\nIt has 27 marble-clad “petals” arranged in clusters of three, forming a total of nine sides.\nThe central hall inside has a soaring height of slightly over 34 meters.\nThe temple is open to everyone, regardless of religion or background.\nArchitect Fariborz Sahba designed it, and it was dedicated in 1986.\nThe Lotus Temple symbolizes unity and inclusivity, welcoming people from all walks of life."],
-     "context": [""]
-    },
-    {"tag": "Shaniwar Wada",
-     "patterns": ["Shaniwar wada","historical places in Pune","Pune Shaniwar wada"],
-     "responses": ["Shaniwar Wada, a historical fortification in Pune, India, served as the grand seat of the Peshwas—prime ministers of the Maratha Empire—from 1732 until 1818. This imposing palace, with its distinctive architecture, was originally intended to be entirely made of stone but was completed using a combination of stone and brick. The surviving structures are now maintained as a tourist site. Notably, it was within these walls that the tragic events surrounding the murder of Peshwa Narayanrao unfolded, and legend has it that his ghost still calls for help on full moon nights. Despite a devastating fire in 1828, the heavy granite ramparts, strong teak gateways, and deep foundations of Shaniwar Wada endure as a testament to its historical significance"],
-     "context": [""]
-    },
-    {"tag": "Phoenix Market City Pune",
-     "patterns": ["phoenix city pune","market city Pune","Phoenix Pune"],
-     "responses": ["Certainly! Phoenix Marketcity Pune is an integrated mixed-use development located in Viman Nagar, Pune, Maharashtra. The mall spans a whopping 1.19 million square feet, making it one of the largest malls in India. With over 350 stores, it caters to diverse shopping needs, from fashion to electronics and more. Entertainment options abound, including a 9-screen PVR for movie enthusiasts, a delightful food court offering various cuisines, and a space for exciting events and concerts. Phoenix Marketcity Pune aims to deliver a holistic lifestyle by combining shopping, dining, movies, and leisure activities. As Pune evolves into a commercial metropolis, this destination adapts to changing times and enhances lives. Whether you’re shopping, dining, or seeking entertainment, Phoenix Marketcity Pune offers a vibrant experience for visitors!"],
-     "context": [""]
-    },
-    {"tag": "UB City Mall",
-     "patterns": ["malls bengaluru", "UB city mall bengaluru", "UB city mall"],
-     "responses": ["UB City, situated in the Central Business District (CBD) of Bangalore, is a luxurious and iconic shopping destination. Its prime location on Vittal Mallya Road, just 1.5 kilometers away from the MG Road – Brigade Road junction, makes it easily accessible. The mall encompasses a total built-up area of 16 lakh square feet and comprises six distinct blocks: UB Tower, Kingfisher Plaza, Concorde, Canberra, Comet, and Kingfisher Towers. Each block stands out with its unique charm, contributing to the overall feeling of a bustling city. UB City is India’s first luxury shopping destination, housing acclaimed brands, stylish boutiques, exquisite restaurants, and an art gallery. Developed by Dr. Vijay Mallya, the chairman of the UB Group, in collaboration with the renowned Prestige Group, UB City epitomizes opulence and sophistication, offering an unparalleled experience for residents and visitors alike"],
-     "context": [""]
-    },
-    {"tag": "ISKCON Bangalore",
-     "patterns": ["ISKCON bangalore", "iskcon temple Bangalore", "Sri Radha Krishna-chandra Temple, Banglore"],
-     "responses": ["ISKCON Bangalore, officially known as the Sri Radha Krishna-chandra Temple, stands as one of the largest Krishna Hindu temples in the world. Located in Bengaluru, Karnataka, this magnificent temple is affiliated with the ISKCON Revival Movement. The temple complex, situated on West Chord Road in Rajaji Nagar, offers a spiritual haven for devotees and visitors alike. Its grandeur extends beyond religious worship, encompassing cultural events, festivals, and community service. The temple’s architecture, adorned with intricate carvings and vibrant colors, reflects devotion and reverence. Devotees can participate in daily rituals, listen to soul-stirring bhajans, and immerse themselves in the divine atmosphere. ISKCON Bangalore’s commitment to spiritual upliftment, philanthropy, and cultural enrichment makes it a cherished landmark in the city"],
-     "context": [""]
-    },
-    {"tag": "Tipu Sultan's Summer Palace",
-     "patterns": ["sultan summer palace", "Tipu Sultan summer palace", "Palace Bangalore"],
-     "responses": ["Tipu Sultan’s Summer Palace, located in Bangalore, India, is an example of Indo-Islamic architecture. It served as the summer residence of the Mysorean ruler Tipu Sultan. The construction of this magnificent palace began under the reign of Hyder Ali, Tipu Sultan’s father, within the walls of the Bangalore Fort. It was completed during Tipu Sultan’s rule in 1791. The palace stands adorned with teak pillars, arches, and balconies. Legend has it that Tipu Sultan conducted his durbar (court) from the upper-floor balconies, one facing east and the other west. The first floor features Zenana Quarters, and the walls are embellished with beautiful floral motifs. Notably, the palace houses a painting of a grand throne envisioned by Tipu Sultan himself—a throne coated with gold sheets and adorned with precious emerald stones. Tipu vowed never to use it until he completely defeated the British Army. After Tipu Sultan’s demise, the British dismantled the throne and auctioned its parts due to its exorbitant cost. The ground floor rooms now house a small museum showcasing various achievements of Tipu Sultan and his administration. Visitors can explore portraits of people and places from that era, view a replica of Tipu’s Tiger (also present in the Victoria and Albert Museum in London), and admire Tipu Sultan’s clothes and crown displayed on silver and gold pedestals. The palace, maintained by the Archaeological Survey of India, stands as a historical gem in the heart of Old Bangalore, near the Kalasipalya bus stand, welcoming tourists and history enthusiasts alike"],
-     "context": [""]
-    }
-]}
+{
+    "intents":[
+       {
+          "tag":"greeting",
+          "patterns":[
+             "Hi there",
+             "How are you",
+             "Is anyone there?",
+             "Hey",
+             "Hola",
+             "Hello",
+             "Good day"
+          ],
+          "responses":[
+             "Hello, thanks for asking",
+             "Good to see you again",
+             "Hi there, how can I help?"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"goodbye",
+          "patterns":[
+             "Bye",
+             "See you later",
+             "Goodbye",
+             "Nice chatting to you, bye",
+             "Till next time"
+          ],
+          "responses":[
+             "See you!",
+             "Have a nice day",
+             "Bye! Come back again soon."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"thanks",
+          "patterns":[
+             "Thanks",
+             "Thank you",
+             "That's helpful",
+             "Awesome, thanks",
+             "Thanks for helping me"
+          ],
+          "responses":[
+             "Happy to help!",
+             "Any time!",
+             "My pleasure"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"noanswer",
+          "patterns":[
+             
+          ],
+          "responses":[
+             "Sorry, can't understand you",
+             "Please give me more information",
+             "Not sure, I understand"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"options",
+          "patterns":[
+             "How you could help me?",
+             "What you can do?",
+             "What help you provide?",
+             "How you can be helpful?",
+             "What support is offered"
+          ],
+          "responses":[
+             "I can guide you through your city, it's famous places, environment and goods available for rent or purchase in nearby locations",
+             "Offering support for to make your adapt to envirorment of your new city"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Indore",
+          "patterns":[
+             "What are famous places in Indore?",
+             "what are historical places in Indore",
+             "tourist attractions in Indore",
+             "What are best places to visit in Indore",
+             "places to visit in Indore"
+          ],
+          "responses":[
+             "Indore is a city of historical and cultural significance, as well as a modern hub of commerce and education. There are many famous places in Indore that you can visit, such as Lalbagh Palace, Khajrana Ganesh Temple, Kanch Mandir, Rajwada Palace, and Patalpani Waterfall.\nThese are some of the best places to visit in Indore, but there are many more to explore. You can also check out the Sarafa Market, Central Museum of Indore, Ralamandal Wildlife Sanctuary, Chappan Dukaan, Choral Dam, Tincha Falls, Indore White Church, Mandu or Mandavgad Forts, and more. \nI hope you enjoy your trip to Indore."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"accomadation in Indore",
+          "patterns":[
+             "apartment in Indore",
+             "accommodation in Indore",
+             "house in Indore",
+             "Dormitory in Indore"
+          ],
+          "responses":[
+             "Accommodations in Indore:  \n1. Apartment for rent at prices INR 1200 with amenities such as WiFi, Parking, Gym, etc.\n2. House for rent at prices INR 2500 with amenities such as Garden, Pet-friendly, Security System, etc. \n3. Dormitory for rent at prices INR 600 with amenities such as Common Kitchen, Laundry Facilities, Study Areas etc."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Mall",
+          "patterns":[
+             "Treasure Island Mall",
+             "TI mall",
+             "TI mall Indore",
+             "TI, Indore",
+             "mall",
+             "shopping mall in Indore"
+          ],
+          "responses":[
+             "Treasure Island Mall is a popular shopping destination in Indore with a wide range of brands and entertainment options and amenities such as Food Court, Multiplex Game Zone, etc."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Khajrana Ganesh Temple",
+          "patterns":[
+             "temple in Indore",
+             "Khajrana Ganesh Temple in Indore",
+             "Ganesh temple in Indore",
+             "khajrana temple"
+          ],
+          "responses":[
+             "Khajrana Ganesh Temple is a Hindu temple dedicated to the god Ganesha, located in Indore, Madhya Pradesh, India.\nIt was built by Maharani Ahilyabai Holkar of the Holkar Dynasty in 1735. The temple is famous for its 8-metre-long Ganesha idol, which is made of limestone, jaggery, mud and bricks, and decorated with precious metals.\nThe temple is a popular pilgrimage destination for Hindus, and it is also a tourist attraction for its beautiful architecture and peaceful atmosphere.\nThe main festival of the temple is Vinayaka Chaturthi, which is celebrated in August or September. \nThe temple also offers online darshan, aarti, and donation services for the devotees"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Phoenix Citadel",
+          "patterns":[
+             "Phoenix Citadel",
+             "phoenix Indore",
+             "shopping mall, indore",
+             "phoenix citadel, Indore"
+          ],
+          "responses":[
+             "Phoenix Citadel is a luxury shopping destination with over 300 brands, events, services, and entertainment. \nIt is located on MR 10 Road in Indore, Madhya Pradesh. \nThe mall is spread over 1.0 million sq. ft. of retail space, making it one of India’s most elegant malls. \nPhoenix Citadel offers a range of services to make your experience even more gratifying, such as valet parking, babysitting rooms, digital directory, gift card, and more. \nYou can also enjoy several events including cultural and entertainment experiences and amazing concerts. \nPhoenix Citadel is a hallmark of shopping extravagance in Indore, and is Central India’s largest mall."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Rajwada Palace",
+          "patterns":[
+             "Rajwada Palace",
+             "rajwada palace in Indore",
+             "rajwada"
+          ],
+          "responses":[
+             "Rajwada Palace, also known as Holkar Palace or Old Palace, is a historical palace located in Indore, Madhya Pradesh, India. \nIt was built by the Holkars of the Maratha Empire in 1747.\nThe palace is a seven-storey structure that showcases a blend of Rajput and Mughal architectural styles. \nThe palace has a beautiful garden, a statue of Queen Ahilya Bai, and a light and sound show in the evening. \nThe palace is a popular tourist attraction and a cultural heritage of Indore."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Transportation in Indore",
+          "patterns":[
+             "transportation in Indore",
+             "to and fro in Indore",
+             "bus facility in Indore",
+             "Indore railway station"
+          ],
+          "responses":[
+             "Certainly! Let’s explore the transportation options in Indore, a vibrant city in Madhya Pradesh, India.\n1. Atal Indore City Transport Services Limited (AiCTSL):\nThe Indore BRTS (ibus), operated by AiCTSL, covers an operational length of 11.5 km with a proposed extension of 20 km. This Bus Rapid Transit System aims to enhance mobility and reduce congestion in the city1.\nCity Buses: The city has a network of buses that ply on 277 km of road routes, providing an essential mode of public transport.\nCab Services: You can avail of services from metro taxis and star cabs for convenient point-to-point travel.\nAuto-Rickshaws: These CNG-fueled three-wheelers are a common sight and offer flexible transportation within the city.\nCity Vans: Look out for Maruti Omni or Tata Magic vans, which provide shared rides at affordable rates.\nVehicle Rentals: Private travel agencies offer rental vehicles for personalized travel experiences.\n2. Shared Taxis (“Magic” and “Omni” Vans):If you want to explore lesser-known areas of the city, rely on these reliable and budget-friendly shared taxis. They are commonly referred to as “Magic” and “Omni” vans."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Malls Delhi",
+          "patterns":[
+             "DLF malls",
+             "DLF Avenue",
+             "DLFs mall in Delhi",
+             "Malls in Delhi"
+          ],
+          "responses":[
+             "Certainly! Let’s explore some of the prominent malls in Delhi, including those developed by DLF:\nDLF Emporio:\nDLF Emporio is a high-end luxury shopping destination in Delhi. It boasts an exquisite collection of fashion, eyewear, and jewelry brands. The mall prioritizes health and safety, and you can find more information on their website.\nDLF Mall of India:\nDLF Mall of India holds the distinction of being the largest mall in India, with a retail space spanning 2 million square feet across 7 floors. It features an array of fabulous fashion stores, delightful dining options, and exciting entertainment venues\n.DLF Promenade Mall:\nLocated on Nelson Mandela Road in Vasant Kunj, DLF Promenade Mall is a paradise for shoppers. It houses renowned brands in fashion, apparel, footwear, and more. Some of the notable brands include Marks & Spencer, Fabindia, Adidas, Reebok, and Levi’s.\nDLF Avenue, Saket:\nStretching over 519,596 square feet, DLF Avenue is considered one of the best shopping malls in Delhi. It hosts a diverse range of brands, including Uniqlo, American Eagle, Guess, Swatch, Fossil, and many others.\nDLF Retail Destinations:\nDLF has created premier retail destinations across India, offering a world of shopping, dining, and entertainment. These destinations prioritize quality, professionalism, and customer service."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Temples Delhi",
+          "patterns":[
+             "Temples in Delhi",
+             "delhi temples",
+             "lotus temple",
+             "Lotus Temple",
+             "lotus temple delhi"
+          ],
+          "responses":[
+             "The Lotus Temple (Baháʼí House of Worship) is an architectural marvel with a lotus-like shape.\nIt has 27 marble-clad “petals” arranged in clusters of three, forming a total of nine sides.\nThe central hall inside has a soaring height of slightly over 34 meters.\nThe temple is open to everyone, regardless of religion or background.\nArchitect Fariborz Sahba designed it, and it was dedicated in 1986.\nThe Lotus Temple symbolizes unity and inclusivity, welcoming people from all walks of life."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Red Fort",
+          "patterns":[
+             "Redfort delhi",
+             "Laal Kila",
+             "fort delhi"
+          ],
+          "responses":[
+             "The Lotus Temple (Baháʼí House of Worship) is an architectural marvel with a lotus-like shape.\nIt has 27 marble-clad “petals” arranged in clusters of three, forming a total of nine sides.\nThe central hall inside has a soaring height of slightly over 34 meters.\nThe temple is open to everyone, regardless of religion or background.\nArchitect Fariborz Sahba designed it, and it was dedicated in 1986.\nThe Lotus Temple symbolizes unity and inclusivity, welcoming people from all walks of life."
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Shaniwar Wada",
+          "patterns":[
+             "Shaniwar wada",
+             "historical places in Pune",
+             "Pune Shaniwar wada"
+          ],
+          "responses":[
+             "Shaniwar Wada, a historical fortification in Pune, India, served as the grand seat of the Peshwas—prime ministers of the Maratha Empire—from 1732 until 1818. This imposing palace, with its distinctive architecture, was originally intended to be entirely made of stone but was completed using a combination of stone and brick. The surviving structures are now maintained as a tourist site. Notably, it was within these walls that the tragic events surrounding the murder of Peshwa Narayanrao unfolded, and legend has it that his ghost still calls for help on full moon nights. Despite a devastating fire in 1828, the heavy granite ramparts, strong teak gateways, and deep foundations of Shaniwar Wada endure as a testament to its historical significance"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Phoenix Market City Pune",
+          "patterns":[
+             "phoenix city pune",
+             "market city Pune",
+             "Phoenix Pune"
+          ],
+          "responses":[
+             "Certainly! Phoenix Marketcity Pune is an integrated mixed-use development located in Viman Nagar, Pune, Maharashtra. The mall spans a whopping 1.19 million square feet, making it one of the largest malls in India. With over 350 stores, it caters to diverse shopping needs, from fashion to electronics and more. Entertainment options abound, including a 9-screen PVR for movie enthusiasts, a delightful food court offering various cuisines, and a space for exciting events and concerts. Phoenix Marketcity Pune aims to deliver a holistic lifestyle by combining shopping, dining, movies, and leisure activities. As Pune evolves into a commercial metropolis, this destination adapts to changing times and enhances lives. Whether you’re shopping, dining, or seeking entertainment, Phoenix Marketcity Pune offers a vibrant experience for visitors!"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"UB City Mall",
+          "patterns":[
+             "malls bengaluru",
+             "UB city mall bengaluru",
+             "UB city mall"
+          ],
+          "responses":[
+             "UB City, situated in the Central Business District (CBD) of Bangalore, is a luxurious and iconic shopping destination. Its prime location on Vittal Mallya Road, just 1.5 kilometers away from the MG Road – Brigade Road junction, makes it easily accessible. The mall encompasses a total built-up area of 16 lakh square feet and comprises six distinct blocks: UB Tower, Kingfisher Plaza, Concorde, Canberra, Comet, and Kingfisher Towers. Each block stands out with its unique charm, contributing to the overall feeling of a bustling city. UB City is India’s first luxury shopping destination, housing acclaimed brands, stylish boutiques, exquisite restaurants, and an art gallery. Developed by Dr. Vijay Mallya, the chairman of the UB Group, in collaboration with the renowned Prestige Group, UB City epitomizes opulence and sophistication, offering an unparalleled experience for residents and visitors alike"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"ISKCON Bangalore",
+          "patterns":[
+             "ISKCON bangalore",
+             "iskcon temple Bangalore",
+             "Sri Radha Krishna-chandra Temple, Banglore"
+          ],
+          "responses":[
+             "ISKCON Bangalore, officially known as the Sri Radha Krishna-chandra Temple, stands as one of the largest Krishna Hindu temples in the world. Located in Bengaluru, Karnataka, this magnificent temple is affiliated with the ISKCON Revival Movement. The temple complex, situated on West Chord Road in Rajaji Nagar, offers a spiritual haven for devotees and visitors alike. Its grandeur extends beyond religious worship, encompassing cultural events, festivals, and community service. The temple’s architecture, adorned with intricate carvings and vibrant colors, reflects devotion and reverence. Devotees can participate in daily rituals, listen to soul-stirring bhajans, and immerse themselves in the divine atmosphere. ISKCON Bangalore’s commitment to spiritual upliftment, philanthropy, and cultural enrichment makes it a cherished landmark in the city"
+          ],
+          "context":[
+             ""
+          ]
+       },
+       {
+          "tag":"Tipu Sultan's Summer Palace",
+          "patterns":[
+             "sultan summer palace",
+             "Tipu Sultan summer palace",
+             "Palace Bangalore"
+          ],
+          "responses":[
+             "Tipu Sultan’s Summer Palace, located in Bangalore, India, is an example of Indo-Islamic architecture.\nIt served as the summer residence of the Mysorean ruler Tipu Sultan.\nThe construction of this magnificent palace began under the reign of Hyder Ali, Tipu Sultan’s father, within the walls of the Bangalore Fort.\nIt was completed during Tipu Sultan’s rule in 1791.\nThe palace stands adorned with teak pillars, arches, and balconies. Legend has it that Tipu Sultan conducted his durbar (court) from the upper-floor balconies, one facing east and the other west.\nThe first floor features Zenana Quarters, and the walls are embellished with beautiful floral motifs. Notably, the palace houses a painting of a grand throne envisioned by Tipu Sultan himself—a throne coated with gold sheets and adorned with precious emerald stones.\nTipu vowed never to use it until he completely defeated the British Army.\nAfter Tipu Sultan’s demise, the British dismantled the throne and auctioned its parts due to its exorbitant cost.\nThe ground floor rooms now house a small museum showcasing various achievements of Tipu Sultan and his administration.\nVisitors can explore portraits of people and places from that era, view a replica of Tipu’s Tiger (also present in the Victoria and Albert Museum in London), and admire Tipu Sultan’s clothes and crown displayed on silver and gold pedestals.\nThe palace, maintained by the Archaeological Survey of India, stands as a historical gem in the heart of Old Bangalore, near the Kalasipalya bus stand, welcoming tourists and history enthusiasts alike"
+          ],
+          "context":[
+             ""
+          ]
+       }
+    ]
+ }
