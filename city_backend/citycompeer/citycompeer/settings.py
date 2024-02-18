@@ -4,9 +4,10 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
  
+#  Yet to configure this in .env, 
 SECRET_KEY = "django-insecure-b#xa#q5fk33(^3**47b%%2&-**eg*(*+p)3zs-1jk*a=g&%@$="
-
 DEBUG = True
+
 # CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000', 
