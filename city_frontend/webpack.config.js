@@ -1,10 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js', // Entry point of your React application
+  entry: './src/index.js', // Entry point  
   output: {
-    path: path.resolve(__dirname, 'dist'), // Output directory
-    filename: 'bundle.js', // Name of the bundled file
+    path: path.resolve(__dirname, 'dist'),
+    // path: path.resolve(__dirname, '..', 'city_backend', 'citycompeer', 'static', 'frontend'), // Adjusted output path
+
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -21,7 +23,7 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
   },
