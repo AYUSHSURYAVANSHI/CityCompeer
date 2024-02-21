@@ -9,6 +9,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("",include("chatbot.urls")),
 
-    # path('/', TemplateView.as_view(template_name='frontend/index.html')),
+    # path('', TemplateView.as_view(template_name='frontend/index.html')),
     path('', views.index, name='index'),
 ]

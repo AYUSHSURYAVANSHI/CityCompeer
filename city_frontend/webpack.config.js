@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require("webpack");
 
 module.exports = {
   entry: './src/index.js', // Entry point  
@@ -27,4 +28,13 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimize: true,
+  },
+
+  // plugins: [
+  //   new webpack.ProvidePlugin({
+  //     "React": "react",
+  //   }),
+  // ],
 };
